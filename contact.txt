@@ -18,6 +18,7 @@ Madhur Wadhwa
 7688883918
 f2016727@pilani.bits-pilani.ac.in
 github.com/madhurw7
+Digital Ocean IP: 104.131.12.75
 
 Suyash Patel 
 2015A7PS032P

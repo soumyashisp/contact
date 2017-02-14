@@ -7,8 +7,11 @@ CHINMAY PANDHARE
 2016A3PS153P
 pandharechinmay882@gmail.com
 7718823969
+<<<<<<< HEAD
 
 Naveen Venkat
 2015A7PS078P
 8003367607
 github.com/nmakes
+=======
+>>>>>>> d3bd25b18858074d130449c65617dbf2dda142fa

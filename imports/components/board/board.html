@@ -1,0 +1,36 @@
+
+
+<header>
+
+  <h1 style="text-align: center">Discussion board</h1>
+
+</header>
+          <div style="height=100px;width: auto;">
+          <login-buttons id="logbutton"></login-buttons>
+          </div>
+ <form  style="font-size: 150%;padding-left:20%;" ng-submit="$ctrl.addComment($ctrl.newComment)">
+
+ <input style="word-wrap: break-word;font-size;150%;width: 800px;height: 50px;" class= "textspace"    ng-model="$ctrl.newComment" type="text" placeholder="  add your  comment here">
+
+ </form>
+
+<ul style="list-style: none">
+  <li ng-repeat="comment in $ctrl.commentsdb" ng-class="{'checked': comment.checked}" style="max-width: 92%">
+    <span class="text"style="font-size:150%">
+     {{comment.text}} {{Meteor.user()}}
+	     <span style="opacity: 0.4;font-size: 75%">
+	     {{"  -  "}}<span id="sender">{{comment.emailid}}</span>{{"  -  "}}
+       {{comment.createdAt | date:'dd-MMM-yyyy'}}
+	     {{comment.createdAt | date:'hh:m'}}
+
+	     </span>
+    </span>
+    {{nameprinted}}
+    <button class="delete" style="position:absolute;right:100px;"
+    ng-click="$ctrl.removeComment(comment)">&times</button>
+    <hr style=" margin-right: 50px;opacity: 0.2;">
+
+  </li>
+</ul>
+
+

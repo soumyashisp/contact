@@ -1,0 +1,47 @@
+
+
+<head>
+
+  <title>new page</title>
+</head>
+
+ 
+
+<body >
+
+  <div class="container" ng-app="simple-discuss">
+
+
+		
+
+
+
+			<div ng-if="currentUser">
+				
+				<board></board>
+			</div>
+
+
+
+			<div ng-if="!currentUser">
+
+				<div id="enterlogin">Please sign in to continue<br><br>
+					<login-buttons style="color:yellow;text-decoration: none"></login-buttons>
+				</div>
+
+			</div>
+
+  </div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
